@@ -18,7 +18,7 @@ function findmovie(){
 
 
 async function getMovie(){
-    let movies=await fetch(`http://www.omdbapi.com/?s=${defaultval}&apikey=ce8d439c`)
+    let movies=await fetch(`https://www.omdbapi.com/?s=${defaultval}&apikey=ce8d439c`)
     movies= await movies.json();
 
     let omdMovies= document.getElementById("showmoviedetails");
